@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def average(class_scores: dict) -> float:
     # ค่าเฉลี่ย = ผลรวมคะแนน / จำนวนคน
     return sum(class_scores.values()) / len(class_scores)

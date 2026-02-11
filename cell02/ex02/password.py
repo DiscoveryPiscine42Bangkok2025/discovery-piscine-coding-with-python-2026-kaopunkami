@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def main():
     password = "Python is awesome"
     user_input = input()

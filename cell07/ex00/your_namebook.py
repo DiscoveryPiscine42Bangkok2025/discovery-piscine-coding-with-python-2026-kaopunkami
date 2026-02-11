@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def array_of_names(persons: dict) -> list:
     full_names = []
     for first, last in persons.items():

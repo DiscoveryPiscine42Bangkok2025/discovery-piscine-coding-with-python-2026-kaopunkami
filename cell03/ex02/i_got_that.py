@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def main():
     prompt = "What you gotta say? : "
     msg = input(prompt)

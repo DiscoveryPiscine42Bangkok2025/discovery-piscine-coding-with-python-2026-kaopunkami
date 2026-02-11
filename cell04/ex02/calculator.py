@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 a = float(input("Give me the first number: "))
 b = float(input("Give me the second number: "))
 

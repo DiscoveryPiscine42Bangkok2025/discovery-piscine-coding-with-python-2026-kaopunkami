@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def main():
     print("Enter a number less than 25")
     s = input()
