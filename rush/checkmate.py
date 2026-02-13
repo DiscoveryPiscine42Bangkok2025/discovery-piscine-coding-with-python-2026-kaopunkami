@@ -6,6 +6,16 @@ def checkmate(board):
     # แยกบรรทัดเก็บลง list
     data = board.splitlines()
     rows = len(data)
+    for line in data:
+        if len(line) != rows:
+            print("Error")
+            return
+    if "K" not in board:
+        print("No king")
+        return
+    if board.count("K") > 1:
+        print("Multiple kings")
+        return
     
     # หาตำแหน่ง King (K)
     k_r, k_c = -1, -1
@@ -15,13 +25,8 @@ def checkmate(board):
                 k_r = r
                 k_c = c
                 break
-        if k_r != -1:
-            break
-            
-    if k_r == -1:
-        print("Fail")
-        return
 
+            
     # 1. เช็ค Pawn (P)
     # Pawn กินขึ้นบนเป็นตัว V แปลว่าถ้า King จะโดนกิน P ต้องอยู่แถวล่างถัดไป (r+1)
     try:
